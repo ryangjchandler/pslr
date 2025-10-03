@@ -1,7 +1,7 @@
 [package]
 name = "pslr"
 description = "Command-line tool for Public Suffix List interactions."
-version = "1.0.0"
+version = "1.0.1"
 edition = "2024"
 authors = ["Ryan Chandler <support@ryangjchandler.co.uk>"]
 license = "MIT"
