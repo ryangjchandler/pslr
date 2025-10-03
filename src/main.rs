@@ -16,7 +16,11 @@ struct Arguments {
     #[clap(short, long, help = "Print the registrable domain for each name")]
     domain: bool,
 
-    #[clap(short, long, help = "Path to public suffix list (uses the built-in list if not specified)")]
+    #[clap(
+        short,
+        long,
+        help = "Path to public suffix list (uses the built-in list if not specified)"
+    )]
     list: Option<PathBuf>,
 }
 
@@ -40,7 +44,7 @@ fn main() {
                 None => {
                     eprintln!("no suffix found for {name}");
                     std::process::exit(1);
-                },
+                }
             }
         } else if args.domain {
             match psl.domain(name.as_bytes()) {
@@ -48,7 +52,7 @@ fn main() {
                 None => {
                     eprintln!("no registrable domain found for {name}");
                     std::process::exit(1);
-                },
+                }
             }
         } else {
             println!("{name}")
