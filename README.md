@@ -30,6 +30,12 @@ $ pslr --domain www.example.com
 example.com
 ```
 
+### Use a custom suffix list
+
+```
+$ pslr --list ./path/to/list.dat --suffix www.example.com
+```
+
 ## Credits
 
 * [Ryan Chandler](https://github.com/ryangjchandler)
