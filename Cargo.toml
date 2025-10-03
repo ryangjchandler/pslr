@@ -5,6 +5,7 @@ version = "1.0.0"
 edition = "2024"
 authors = ["Ryan Chandler <support@ryangjchandler.co.uk>"]
 license = "MIT"
+repository = "https://github.com/ryangjchandler/pslr"
 
 [dependencies]
 anyhow = "1.0.100"
